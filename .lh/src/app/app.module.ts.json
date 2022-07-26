@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/app/app.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1655388298857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658861082157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,23 @@\n import { NgModule } from '@angular/core';\n+import { FormsModule } from '@angular/forms';\n import { BrowserModule } from '@angular/platform-browser';\n \n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';\n+import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';\n \n @NgModule({\n   declarations: [\n     AppComponent,\n-    MeuPrimeiroComponent\n+    MeuPrimeiroComponent,\n+    MeuPrimeiro2Component\n   ],\n   imports: [\n     BrowserModule,\n+    FormsModule,\n+    HttpModule,\n     AppRoutingModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent]\n"
+                },
+                {
+                    "date": 1658861105991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,8 @@\n     MeuPrimeiro2Component\n   ],\n   imports: [\n     BrowserModule,\n-    FormsModule,\n-    HttpModule,\n     AppRoutingModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent]\n"
+                },
+                {
+                    "date": 1658861531809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n import { NgModule } from '@angular/core';\n-import { FormsModule } from '@angular/forms';\n import { BrowserModule } from '@angular/platform-browser';\n \n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n"
+                },
+                {
+                    "date": 1658862676024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,16 +2,18 @@\n import { BrowserModule } from '@angular/platform-browser';\n \n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n+import { CursosComponent } from './cursos/cursos.component';\n import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';\n import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';\n \n @NgModule({\n   declarations: [\n     AppComponent,\n     MeuPrimeiroComponent,\n-    MeuPrimeiro2Component\n+    MeuPrimeiro2Component,\n+    CursosComponent\n   ],\n   imports: [\n     BrowserModule,\n     AppRoutingModule\n"
+                },
+                {
+                    "date": 1658862805189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,18 +2,16 @@\n import { BrowserModule } from '@angular/platform-browser';\n \n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n-import { CursosComponent } from './cursos/cursos.component';\n import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';\n import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';\n \n @NgModule({\n   declarations: [\n     AppComponent,\n     MeuPrimeiroComponent,\n-    MeuPrimeiro2Component,\n-    CursosComponent\n+    MeuPrimeiro2Component\n   ],\n   imports: [\n     BrowserModule,\n     AppRoutingModule\n"
+                },
+                {
+                    "date": 1658862900923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import { BrowserModule } from '@angular/platform-browser';\n \n import { AppRoutingModule } from './app-routing.module';\n import { AppComponent } from './app.component';\n+import { CursosModule } from './cursos/cursos.module';\n import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';\n import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';\n \n @NgModule({\n@@ -13,9 +14,10 @@\n     MeuPrimeiro2Component\n   ],\n   imports: [\n     BrowserModule,\n-    AppRoutingModule\n+    AppRoutingModule,\n+    CursosModule\n   ],\n   providers: [],\n   bootstrap: [AppComponent]\n })\n"
+                }
+            ],
+            "date": 1655388298857,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    MeuPrimeiroComponent\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n"
+        }
+    ]
+}
