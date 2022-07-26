@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/app/cursos/cursos.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1658865430119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658865559052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n export class CursosComponent implements OnInit {\n \n   nomePortal: string;\n \n+  cursos: string[] = [];\n+\n   constructor() {\n \n     this.nomePortal = 'http://loiane.training';\n   }\n"
+                },
+                {
+                    "date": 1658865622193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n export class CursosComponent implements OnInit {\n \n   nomePortal: string;\n \n-  cursos: string[] = [];\n+  cursos: string[] = ['Java', 'Ext JS', 'Angular'];\n \n   constructor() {\n \n     this.nomePortal = 'http://loiane.training';\n"
+                },
+                {
+                    "date": 1658866612535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { Component, OnInit } from '@angular/core';\n+import { CursosService } from './cursos.service';\n \n @Component({\n   selector: 'app-cursos',\n   templateUrl: './cursos.component.html',\n@@ -8,13 +9,15 @@\n export class CursosComponent implements OnInit {\n \n   nomePortal: string;\n \n-  cursos: string[] = ['Java', 'Ext JS', 'Angular'];\n+  cursos: string[];\n \n   constructor() {\n \n     this.nomePortal = 'http://loiane.training';\n+\n+    var servico = new CursosService();\n   }\n \n   ngOnInit(): void {\n   }\n"
+                },
+                {
+                    "date": 1658866895562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,13 @@\n   nomePortal: string;\n \n   cursos: string[];\n \n-  constructor() {\n+  constructor(private cursoService: CursosService) {\n \n     this.nomePortal = 'http://loiane.training';\n \n-    var servico = new CursosService();\n+    this.cursos = this.cursoService.getCursos();\n   }\n \n   ngOnInit(): void {\n   }\n"
+                }
+            ],
+            "date": 1658865430119,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-cursos',\n  templateUrl: './cursos.component.html',\n  styleUrls: ['./cursos.component.css']\n})\nexport class CursosComponent implements OnInit {\n\n  nomePortal: string;\n\n  constructor() {\n\n    this.nomePortal = 'http://loiane.training';\n  }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}

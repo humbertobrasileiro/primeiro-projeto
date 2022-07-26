@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/cursos/cursos.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1658867040926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1658867040926,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class CursosService {\n\n  constructor() { }\n\n  getCursos() {\n    return ['Java', 'Ext JS', 'Angular'];\n  }\n\n}\n"
+        }
+    ]
+}

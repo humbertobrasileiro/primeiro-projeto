@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1658863764841,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1658865136420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n-<p>meu-primeiro2 works!</p>\n+<p>\n+  meu-primeiro2 works!\n+</p>\n \n <app-cursos></app-cursos>\n"
                 }
             ],
             "date": 1658863764841,
